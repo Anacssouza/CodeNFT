@@ -15,23 +15,24 @@
 body {
   background-color: #030303;
   color: var(--primary-color);
-  padding-left: 12.5rem;
-  padding-right: 12.5rem;
-  font-family: var(--primary-text)
+  font-family: var(--primary-text);
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
 nav{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   height: 55px;
 }
 
 nav ul {
-  
   display: flex;
   flex-direction: row;
   align-items: center;
- 
+  gap: 20px;
 }
 
 nav img {
@@ -41,16 +42,9 @@ nav img {
 }
 
 .logo{
-  width: 30%;
   gap: 16px;
   font-family: var(--secundary-text);
   font-size: 23px;
-}
-
-.nav {
-  justify-content: flex-end;
-  width: 70%;
-  gap: 40px;
 }
 
 .nav li:hover{
@@ -59,9 +53,14 @@ nav img {
 }
 
 .hero {
-  display: flex;
-  width: 100%;
-  padding-top: 7.5rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 30px;
+  width: 100vw;
+  padding-top: 120px;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
 }
 
 .hero h1{
@@ -71,8 +70,9 @@ nav img {
 }
 
 .hero p{
+  max-width: 420px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 160%;
   margin-top: 20px;
 }
@@ -92,8 +92,8 @@ nav img {
 .hero .explore{
   color: #030303;
   background: linear-gradient(97.86deg, #FF8D8D -38.38%, #F7FC0E 71.88%);
-  width: 13rem;
-  height: 3.5rem;
+  width: 208px;
+  height: 56px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -115,15 +115,14 @@ nav img {
   background-image: linear-gradient(black, grey), radial-gradient(circle at bottom right, #E025CE, #15811a, #bc24e6);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  width: 85vw;
+  width: 500px;
   height: 63vh;
   border-radius: 10px;
 }
 
 .top img {
-  width: 22vw;
-  height: 43vh;
-  margin:  auto;
+  width: 300px;
+  height: 300px;
 }
 
 .top .mascote .topTitle{
@@ -134,23 +133,23 @@ nav img {
   border-radius: 10px;
   width: 93px;
   height: 31px;
-  margin: 2.4vw;
+  margin: 40px;
   display: flex;
 }
 
 .top .mascote h3{
   margin: auto;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .top1{
   background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.201) -6.39%, rgba(255, 255, 255, 0.063) 112.17%);
   backdrop-filter: blur(5px);
-  height: 9.9vw;
+  height: 137px;
   width: 100%;
   display: flex;
-  border-radius: 0 0 0 10px;
+  border-radius: 0 0 10px 10px 
   
 }
 
